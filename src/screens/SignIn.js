@@ -34,7 +34,6 @@ export default class SignIn extends Component {
     async SignIn() {
         if(this.state.loginname != '' && this.state.password != '') {
             let json = await Api.signIn(this.state.loginname, this.state.password);
-            console.log(json);
             if(json.token) {
                 await AsyncStorage.setItem('token', json.token);
                 await AsyncStorage.setItem('user', json.data.SU_ID.toString());

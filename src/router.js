@@ -5,6 +5,9 @@ import Preload from './screens/Preload';
 import SignIn from './screens/SignIn';
 import SignUp from './screens/SignUp';
 import Home from './screens/Home';
+import InsertYoungs from './screens/InsertYoungs';
+import DetailYoungs from './screens/DetailYoungs';
+import InsertDepartaments from './screens/InsertDepartaments';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +24,9 @@ class Routes extends Component {
                 <Stack.Screen name="SignIn" component={SignIn} />
                 <Stack.Screen name="SignUp" component={SignUp} />
                 <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="InsertYoungs" component={InsertYoungs} />
+                <Stack.Screen name="DetailYoungs" component={DetailYoungs} />
+                <Stack.Screen name="InsertDepartaments" component={InsertDepartaments} />
             </Stack.Navigator>
         );
     }
