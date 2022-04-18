@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 
-import Routes from './src/router';
+import Routes from './router';
 
 export default class MQV extends Component {
   render() {
